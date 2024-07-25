@@ -1,0 +1,109 @@
+/* Adjust your login.css as follows */
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: none !important;
+  background-color: #343a40; /* Dark background color */
+}
+
+.title {
+  color: #ffffff; /* White text color */
+  font-size: 2.5rem; /* Adjust the size as needed */
+  margin-top: 20px; /* Margin from the top */
+  margin-bottom: 30px; /* Space between title and login form */
+}
+
+.login-form {
+  background: #495057; /* Slightly lighter dark background */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: none !important; /* Set to 40% of the viewport width */
+  width: 50vh !important;
+}
+
+.login-form .logo {
+  width: 120px; /* Adjust logo size */
+  margin-bottom: 20px;
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color: #ffffff; /* White text color */
+}
+
+.login-form .form-error {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #dc3545; /* Red color for error messages */
+}
+
+.login-form .form-group {
+  margin-bottom: 1.5rem; /* Adjust spacing between form groups */
+  text-align: left; /* Align labels to the left */
+}
+
+.login-form .form-group label {
+  margin-bottom: 0.5rem; /* Space between label and input field */
+  color: #ffffff; /* White label color */
+  font-weight: bold;
+}
+
+.login-form .form-control {
+  padding: 0.75rem 1rem; /* Increase padding for input fields */
+  background-color: #6c757d; /* Darker background for input fields */
+  border-color: black; /* Darker border color */
+  color: #ffffff; /* White text color */
+}
+
+.login-form .form-control:focus {
+  box-shadow: none; /* Remove the default focus shadow */
+  border-color: #007bff; /* Change the border color on focus */
+}
+
+.login-form .form-control.is-invalid {
+  border-color: #dc3545; /* Change the border color for invalid fields */
+}
+
+.login-form .form-control.is-invalid:focus {
+  box-shadow: none; /* Remove the default focus shadow for invalid fields */
+}
+
+.login-form .form-control.is-invalid + .invalid-feedback {
+  display: block; /* Show the invalid feedback message */
+}
+
+.login-form .mb-4 {
+  margin-bottom: 1.5rem; /* Adjust spacing between form groups */
+}
+
+.login-form .w-100 {
+  width: 100%;
+  padding: 0.75rem 1rem; /* Adjust button padding */
+  font-size: 1rem; /* Adjust button font size */
+  background-color: #007bff; /* Primary button color */
+  border: none; /* Remove default border */
+}
+
+.login-form .w-100:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+.login-form .mt-3 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.login-form .text-center a {
+  color: #007bff; /* Link color */
+}
+
+.login-form .text-center a:hover {
+  color: #0056b3; /* Darker link color on hover */
+}

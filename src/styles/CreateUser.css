@@ -1,0 +1,90 @@
+/* src/styles/CreateUser.css */
+.create-user-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  max-width: none !important;
+  background-color: #343a40; /* Dark background */
+}
+
+.create-user-form {
+  background: #495057; /* Darker background for the form */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: none !important; /* Set to 40% of the viewport width */
+  width: 50vh !important;
+  position: relative; /* For positioning the back icon */
+}
+
+.create-user-form .logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.create-user-form h2 {
+  margin-bottom: 20px;
+  color: #ffffff; /* White color for the heading */
+}
+
+.create-user-form .form-error {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #dc3545; /* Red color for errors */
+}
+
+.create-user-form .form-group {
+  margin-bottom: 1.5rem; /* Adjust spacing between form groups */
+  text-align: left; /* Align labels to the left */
+}
+
+.create-user-form .form-group label {
+  margin-bottom: 0.5rem; /* Space between label and input field */
+  font-weight: bold; /* Make the label text bold */
+  color: #ffffff; /* White color for labels */
+}
+
+.create-user-form .form-group .form-control {
+  padding: 0.75rem 1rem; /* Increase padding for input fields */
+  background-color: #6c757d; /* Darker background for input fields */
+  color: #ffffff; /* White text color for input fields */
+  border: 1px solid black; /* Dark border color for input fields */
+}
+
+.create-user-form .form-group .form-control:focus {
+  box-shadow: none; /* Remove the default focus shadow */
+  border-color: #007bff; /* Change the border color on focus */
+}
+
+.create-user-form .form-group .form-control.is-invalid {
+  border-color: #dc3545; /* Change the border color for invalid fields */
+}
+
+.create-user-form .form-group .form-control.is-invalid:focus {
+  box-shadow: none; /* Remove the default focus shadow for invalid fields */
+}
+
+.create-user-form .form-group .form-control.is-invalid + .invalid-feedback {
+  display: block; /* Show the invalid feedback message */
+}
+
+.create-user-form .mb-4 {
+  margin-bottom: 1.5rem; /* Adjust spacing between form groups */
+}
+
+.create-user-form .w-100 {
+  width: 100%;
+  padding: 0.75rem 1rem; /* Adjust button padding */
+  font-size: 1rem; /* Adjust button font size */
+}
+
+.back-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  color: #ffffff; /* White color for the icon */
+}
