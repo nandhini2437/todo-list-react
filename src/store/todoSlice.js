@@ -13,7 +13,23 @@ export const fetchTodos = createAsyncThunk(
     return userTodos;
   }
 );
-
+export const fetchTodoById = createAsyncThunk(
+  'todo/fetchById',
+  async (todoId, thunkAPI) => {
+    const token = localStorage.getItem('authToken'); 
+    try {
+      const response = await axios.get(`http://35.95.212.85/todo/by-id`, {
+        headers: {
+          'Authorization': `Bearer ${token}`, 
+        },
+        params: { todo_id: todoId }
+      });
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.response.data);
+    }
+  }
+);
 
 export const addTodo = createAsyncThunk(
     'todo',
@@ -54,6 +70,9 @@ const todoSlice = createSlice({
       .addCase(fetchTodos.rejected, (state, action) => {
         state.loading = 'idle';
         state.error = action.error.message;
+      })
+      .addCase(fetchTodoById.fulfilled, (state, action) => {
+        state.selectedTodo = action.payload; 
       })
       .addCase(addTodo.pending, (state) => {
         state.loading = 'loading';

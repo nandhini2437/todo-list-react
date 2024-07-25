@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../styles/Login.css';
-import logo from '../assets/login-logo.png';
 import { fetchTodos } from '../store/todoSlice';
 import { setUsername } from '../store/userSlice';
 import { IoIosLogIn } from "react-icons/io";
