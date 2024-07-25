@@ -5,8 +5,12 @@ import axios from 'axios';
 export const fetchTodos = createAsyncThunk(
   'todo/fetchAll',
   async (username, thunkAPI) => {
-    const response = await axios.get(`http://35.95.212.85/todo/all?username=${username}`);
-    return response.data;
+    const response = await axios.get('http://35.95.212.85/todo/all');
+    const todos = response.data;
+
+    const userTodos = todos.filter(todo => todo.username === username);
+
+    return userTodos;
   }
 );
 
@@ -19,7 +23,7 @@ export const addTodo = createAsyncThunk(
       try {
         const response = await axios.post('http://35.95.212.85/todo', newTodo, {
           headers: {
-            'Authorization': `Bearer ${token}`, // Include token in the Authorization header
+            'Authorization': `Bearer ${token}`, 
           },
         });
         return response.data;

@@ -14,7 +14,7 @@ const TodoList = () => {
   const loading = useSelector(state => state.todo.loading);
   const error = useSelector(state => state.todo.error);
   const username = useSelector(state => state.user.username);
-  const [searchId, setSearchId] = useState(''); 
+  const [searchId, setSearchId] = useState('');
 
   useEffect(() => {
     if (username) {
@@ -37,8 +37,8 @@ const TodoList = () => {
     navigate('/login');
   };
 
-  const filteredTodos = todos.filter(todo => todo.username === username).filter(todo => searchId === '' || todo.id.toString() === searchId); 
-  
+  const filteredTodos = todos.filter(todo => searchId === '' || todo.id.toString() === searchId);
+
   return (
     <Container className="todo-container">
       <Row className="justify-content-center">
@@ -59,8 +59,9 @@ const TodoList = () => {
           <div className="todo-list-content shadow p-3 mb-4">
             <ListGroup>
               {filteredTodos.map(todo => (
-                <ListGroup.Item key={todo.id}>
-                  {todo.text}
+                <ListGroup.Item key={todo.id} className="d-flex justify-content-between">
+                  <span>{todo.text}</span>
+                  <span>{todo.id}</span>
                 </ListGroup.Item>
               ))}
             </ListGroup>
