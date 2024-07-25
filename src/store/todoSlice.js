@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// Thunk to fetch all todos
+
 export const fetchTodos = createAsyncThunk(
   'todo/fetchAll',
   async (username, thunkAPI) => {
@@ -10,12 +10,11 @@ export const fetchTodos = createAsyncThunk(
   }
 );
 
-// Thunk to add a new todo
+
 export const addTodo = createAsyncThunk(
     'todo',
     async (newTodo, thunkAPI) => {
-    //   const state = thunkAPI.getState();
-      const token = localStorage.getItem('authToken'); // Retrieve token from local storage
+      const token = localStorage.getItem('authToken'); 
   
       try {
         const response = await axios.post('http://35.95.212.85/todo', newTodo, {

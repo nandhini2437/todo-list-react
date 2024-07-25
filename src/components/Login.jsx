@@ -33,17 +33,13 @@ const Login = () => {
         },
       });
 
-      // Assuming the response contains a token and username
       const token = response.data.access_token;
       localStorage.setItem('authToken', token);
 
-      // Store username in Redux
       dispatch(setUsername(usernameLocal));
 
-      // Fetch todos using username
       await dispatch(fetchTodos(usernameLocal));
 
-      // Navigate to todos page
       navigate('/todos');
     } catch (error) {
       console.error(error);
@@ -57,9 +53,6 @@ const Login = () => {
 
   return (
     <Container className="login-container bg-dark text-white py-5">
-       {/* <div className="text-center mb-4">
-        <h1 className="title">TODO LIST APP</h1>
-      </div> */}
       <Row className="justify-content-center">
         <Col xs={12} className="text-center mb-4">
           <h1 className="title">TODO LIST APP</h1>

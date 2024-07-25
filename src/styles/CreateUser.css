@@ -5,18 +5,18 @@
   align-items: center;
   height: 100vh;
   max-width: none !important;
-  background-color: #343a40; /* Dark background */
+  background-color: #343a40;
 }
 
 .create-user-form {
-  background: #495057; /* Darker background for the form */
+  background: #495057;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: none !important; /* Set to 40% of the viewport width */
+  max-width: none !important;
   width: 50vh !important;
-  position: relative; /* For positioning the back icon */
+  position: relative;
 }
 
 .create-user-form .logo {
@@ -26,59 +26,59 @@
 
 .create-user-form h2 {
   margin-bottom: 20px;
-  color: #ffffff; /* White color for the heading */
+  color: #ffffff;
 }
 
 .create-user-form .form-error {
   margin-bottom: 20px;
   font-size: 16px;
   font-weight: bold;
-  color: #dc3545; /* Red color for errors */
+  color: #dc3545;
 }
 
 .create-user-form .form-group {
-  margin-bottom: 1.5rem; /* Adjust spacing between form groups */
-  text-align: left; /* Align labels to the left */
+  margin-bottom: 1.5rem;
+  text-align: left;
 }
 
 .create-user-form .form-group label {
-  margin-bottom: 0.5rem; /* Space between label and input field */
-  font-weight: bold; /* Make the label text bold */
-  color: #ffffff; /* White color for labels */
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .create-user-form .form-group .form-control {
-  padding: 0.75rem 1rem; /* Increase padding for input fields */
-  background-color: #6c757d; /* Darker background for input fields */
-  color: #ffffff; /* White text color for input fields */
-  border: 1px solid black; /* Dark border color for input fields */
+  padding: 0.75rem 1rem;
+  background-color: #6c757d;
+  color: #ffffff;
+  border: 1px solid black;
 }
 
 .create-user-form .form-group .form-control:focus {
-  box-shadow: none; /* Remove the default focus shadow */
-  border-color: #007bff; /* Change the border color on focus */
+  box-shadow: none;
+  border-color: #007bff;
 }
 
 .create-user-form .form-group .form-control.is-invalid {
-  border-color: #dc3545; /* Change the border color for invalid fields */
+  border-color: #dc3545;
 }
 
 .create-user-form .form-group .form-control.is-invalid:focus {
-  box-shadow: none; /* Remove the default focus shadow for invalid fields */
+  box-shadow: none;
 }
 
 .create-user-form .form-group .form-control.is-invalid + .invalid-feedback {
-  display: block; /* Show the invalid feedback message */
+  display: block;
 }
 
 .create-user-form .mb-4 {
-  margin-bottom: 1.5rem; /* Adjust spacing between form groups */
+  margin-bottom: 1.5rem;
 }
 
 .create-user-form .w-100 {
   width: 100%;
-  padding: 0.75rem 1rem; /* Adjust button padding */
-  font-size: 1rem; /* Adjust button font size */
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
 }
 
 .back-icon {
@@ -86,5 +86,5 @@
   top: 10px;
   left: 10px;
   cursor: pointer;
-  color: #ffffff; /* White color for the icon */
+  color: #ffffff;
 }

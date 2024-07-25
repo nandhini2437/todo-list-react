@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from '../api/axiosConfig';
 import { useNavigate } from 'react-router-dom';
 import { Form, Button, Container, Row, Col, Alert } from 'react-bootstrap';
-import { ArrowLeft } from 'react-bootstrap-icons'; // Import the back icon
+import { ArrowLeft } from 'react-bootstrap-icons';
 import '../styles/CreateUser.css';
 import { CgUserAdd } from "react-icons/cg";
 
@@ -38,7 +38,6 @@ const CreateUser = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    // Validate all fields on submit
     const usernameError = validateUsername(username);
     const emailError = validateEmail(email);
     const passwordError = validatePassword(password);

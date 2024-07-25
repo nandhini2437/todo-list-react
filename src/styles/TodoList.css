@@ -1,59 +1,56 @@
 .todo-container {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   max-width: none !important;
-  background-color: #343a40; 
-  }
-  
-  .todo-form-wrapper {
+  background-color: #343a40;
+}
 
-
-background: #495057; /* Darker background for the form */
+.todo-form-wrapper {
+  background: #495057;
   padding: 40px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: none !important; /* Set to 40% of the viewport width */
+  max-width: none !important;
   width: 50vh !important;
-  }
-  
-  .title {
-    color: #ffffff; /* White text color for the title */
-    margin-bottom: 20px;
-  }
-  
-  .search-form-group {
-    margin-bottom: 1.5rem;
-  }
-  
-  .search-label {
-    color: #ffffff; /* White label color */
-  }
-  
-  .todo-list-content {
-    background: #343a40; /* Slightly lighter dark background */
-    padding: 20px;
-    border-radius: 10px;
-  }
-  
-  .todo-list-content .list-group-item {
-    background-color: #343a40; /* Dark background for list items */
-    border: none; /* Remove borders */
-    color: #ffffff; /* White text color */
-  }
-  
-  .todo-list-content .list-group-item:hover {
-    background-color: #495057; /* Slightly lighter dark background on hover */
-  }
-  
-  .btn-primary {
-    background-color: #007bff; /* Primary button color */
-    border: none; /* Remove default border */
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3; /* Darker button color on hover */
-  }
-  
+}
+
+.title {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.search-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.search-label {
+  color: #ffffff;
+}
+
+.todo-list-content {
+  background: #343a40;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.todo-list-content .list-group-item {
+  background-color: #343a40;
+  border: none;
+  color: #ffffff;
+}
+
+.todo-list-content .list-group-item:hover {
+  background-color: #495057;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
